@@ -1,0 +1,29 @@
+body{
+    font-size: 16px;
+    font-family: 'Raleway', helvetica, sans-serif;
+    margin: 0;
+}
+
+.condensed-text{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+a{
+    color: initial;
+    text-decoration: none;
+}
+
+/* Includes */
+header{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 1px;
+    height: 80px;
+}
+
+header nav{
+    height: 100%;
+}
+
+/* HomePage */
+
+/* PostPage */
