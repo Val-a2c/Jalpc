@@ -4,6 +4,10 @@ body{
     margin: 0;
 }
 
+h1, h2, h3, h4{
+    margin: 0;
+}
+
 .condensed-text{
     font-family: 'Roboto Condensed', sans-serif;
 }
@@ -22,6 +26,18 @@ header{
 
 header nav{
     height: 100%;
+}
+
+header h1{
+    font-size: 2em;
+    font-weight: 700;
+}
+
+header .contact-btn{
+    font-weight: 700;
+    padding: 12px 20px;
+    border: 2px solid black;
+    border-radius: 30px;
 }
 
 /* HomePage */
