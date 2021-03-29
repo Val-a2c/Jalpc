@@ -413,7 +413,11 @@ footer .linkedin-sharelink img{
 /* ------------------------------------------- CGU -------------------------------------------------- */
 .cgu{
     height: 75vh;
-    padding-top: 50px;
+    padding-top: 150px;
+}
+
+.cgu-block-btn{
+    margin-top: 50px;
 }
 
 
