@@ -399,7 +399,7 @@ footer .linkedin-sharelink img{
 
 
 
-/* ------------------------------------------ PostPage todo ---------------------------------------------- */
+/* ------------------------------------------ PostPage ---------------------------------------------- */
 
 
 /* ------------------------------------------- CGU -------------------------------------------------- */
@@ -409,7 +409,7 @@ footer .linkedin-sharelink img{
 }
 
 
-/* todo media max width 1060px*/
+/* ------------------------------------------- RESPONSIVE RULES -------------------------------------------------- */
 @media screen and (max-width: 1060px){
     .container{
         width: calc(100% - 40px);
@@ -443,6 +443,7 @@ footer .linkedin-sharelink img{
 
     #solutions .container{
         display: grid;
+        gap: 20px;
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -484,8 +485,13 @@ footer .linkedin-sharelink img{
         flex-direction: column-reverse;
     }
 
-    #bio .container > div:first-child, #bio .container > div:last-child{
-        width: calc(100% - 40px);
+    #bio .container > div:first-child{
+        padding-right: 0;
+        width: 100%;
+    }
+
+    #bio .container > div:last-child{
+        width: 100%;
     }
 
     #bio .container > div:last-child img{
@@ -533,8 +539,6 @@ footer .linkedin-sharelink img{
         justify-content: center;
     }
 }
-
-
 
 @media screen and (max-width: 500px){
 
