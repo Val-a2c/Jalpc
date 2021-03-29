@@ -1,4 +1,4 @@
-html {
+html{
     scroll-behavior: smooth;
 }
 
@@ -41,6 +41,9 @@ a{
 
 /* Includes */
 header{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 1px;
     height: 65px;
@@ -99,16 +102,16 @@ footer .linkedin-sharelink img{
 #intro > img{
     position: relative;
     width: 100%;
-    height: calc(100vh - 65px);
+    height: 100vh;
     object-fit: cover;
 }
 
 .intro-content{
     position: absolute;
     top: 50%;
-    left: calc((100vw - 1000px)/2);
-    transform: translateY(-50%);
-    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
     max-width: 1000px;
 }
 
@@ -296,11 +299,10 @@ footer .linkedin-sharelink img{
 
 #bio .container{
     display: flex;
-    height: 400px;
 }
 
 #bio .container > div:first-child{
-    flex: 2;
+    width: 65%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -323,11 +325,12 @@ footer .linkedin-sharelink img{
 }
 
 #bio .container > div:last-child{
-    flex: 1;
+    width: 35%;
 }
 
 #bio .container > div:last-child img{
     width: 100%;
+    max-width: 350px;
     height: 100%;
     object-fit: cover;
 }
@@ -396,9 +399,8 @@ footer .linkedin-sharelink img{
 
 
 
+/* ------------------------------------------ PostPage todo ---------------------------------------------- */
 
-
-/* ------------------------------------------ PostPage ---------------------------------------------- */
 
 /* ------------------------------------------- CGU -------------------------------------------------- */
 .cgu{
@@ -407,4 +409,142 @@ footer .linkedin-sharelink img{
 }
 
 
-/* todo media max width 1050px*/
+/* todo media max width 1060px*/
+@media screen and (max-width: 1060px){
+    .container{
+        width: calc(100% - 40px);
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    #simplify::before {
+        width: calc(100% - 60px);
+    }
+}
+
+
+@media screen and (max-width: 1000px){
+    #bio .container > div:last-child img{
+        max-height: 300px;
+    }
+}
+
+
+@media screen and (max-width: 750px){
+    .needs_items{
+        flex-direction: column;
+    }
+
+    .needs_items > p{
+        margin: 10px auto;
+        padding: 20px;
+        width: calc(100% - 44px);
+    }
+
+    #solutions .container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .solutions_item{
+        width: 100%;
+    }
+
+    .steps{
+        flex-direction: column;
+    }
+
+    .steps > div{
+        display: flex;
+        width: calc(100% - 40px);
+        text-align: left;
+        margin: 20px auto;
+    }
+
+    .steps > div > .step_text{
+        width: 80%;
+        padding-left: 20px;
+    }
+
+    .steps .square_box .square_linker{
+        position: absolute;
+        top: 67px;
+        left: 27px;
+        width: 1px;
+        height: calc(100% - 40px);
+        border-right: 1px solid #d6d6d5;
+        border-top: 0;
+    }
+
+    #simplify::before{
+        top: -40px;
+    }
+
+    #bio .container{
+        flex-direction: column-reverse;
+    }
+
+    #bio .container > div:first-child, #bio .container > div:last-child{
+        width: calc(100% - 40px);
+    }
+
+    #bio .container > div:last-child img{
+        display: block;
+        margin: 0 auto 20px;
+    }
+
+    #collaborations .collaboration{
+        flex-direction: column;
+    }
+
+    .collaboration-img{
+        width: 100%;
+        text-align: center;
+    }
+
+    .collaboration-img img{
+        width: 100%;
+        max-width: 350px;
+    }
+
+
+    .collaboration-text{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header .btn, header h1{
+        display: none;
+    }
+
+    .header-brand{
+        margin: auto;
+    }
+
+    footer .container{
+        padding-top: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer .linkedin-sharelink{
+        justify-content: center;
+    }
+}
+
+
+
+@media screen and (max-width: 500px){
+
+    body{
+        font-size: 15px;
+    }
+
+    #solutions .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
