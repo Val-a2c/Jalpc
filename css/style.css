@@ -108,7 +108,7 @@ footer .linkedin-sharelink img{
 
 .intro-content{
     position: absolute;
-    top: 50%;
+    top: 47%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
@@ -119,17 +119,27 @@ footer .linkedin-sharelink img{
     font-size: 3em;
     font-weight: 700;
     line-height: 1.4em;
-    margin-bottom: 100px;
+    margin-bottom: 110px;
 }
+
 .intro-content > .btn{
     font-size: 1.2em;
     padding: 25px 40px;
     border-radius: 50px;
 }
+
 /* Section Needs */
 #needs{
+    position: relative;
     color: #4f4646;
     background-color: white;
+}
+
+#anchor{
+    display: block;
+    position: absolute;
+    top: -65px;
+    visibility: hidden;
 }
 
 #needs h2{
@@ -155,6 +165,7 @@ footer .linkedin-sharelink img{
     border: 2px solid rgba(0,0,0,.1);
     width: 28%;
     line-height: 1.4em;
+    text-align: center;
 }
 
 /* Section Solutions */
@@ -408,6 +419,16 @@ footer .linkedin-sharelink img{
 
 
 /* ------------------------------------------ PostPage ---------------------------------------------- */
+.postPage p{
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 32px;
+}
+
+.postPage .container{
+    max-width: 816px;
+}
+
 .postHeader{
     padding-top: 65px;
     position: relative;
@@ -419,7 +440,7 @@ footer .linkedin-sharelink img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: bottom;
+    object-position: center;
 }
 
 .postHeader > h2{
