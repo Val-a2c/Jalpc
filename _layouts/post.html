@@ -7,8 +7,19 @@
 
 {% include header.html %}
 
-<main>
-    {{ content }}
+<main class="postPage">
+    <div class="postHeader">
+        <img src="{{ page.header-image }}">
+        <h2>{{ page.title }}</h2>
+    </div>
+
+    <div class="container">
+        <div class="postDate">
+            <p>{{ page.date | date: "%d / %m / %Y" }}</p>
+        </div>
+
+        {{ content }}
+    </div>
 </main>
 
 {% include footer.html %}
