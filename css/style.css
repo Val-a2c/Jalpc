@@ -168,6 +168,9 @@ footer .linkedin-sharelink img{
     border: 2px solid rgba(0,0,0,.1);
     width: 28%;
     line-height: 1.4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
