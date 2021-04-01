@@ -420,8 +420,47 @@ footer .linkedin-sharelink img{
     font-size: 2.2em;
     font-weight: 100;
 }
-/* Section Posts todo */
+/* Section Posts */
+#posts ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
 
+#posts article{
+    width: 80%;
+    border: 1px solid lightgrey;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+#post .postBtn{
+    text-align: center;
+    display: block;
+    margin: auto;
+    width: 200px;
+}
+
+/* ------------------------------------------ PostPage ---------------------------------------------- */
+.postListPage{
+    padding-top: calc(65px + 40px);
+    width: 80%;
+    max-width: 816px;
+    margin: auto;
+}
+
+.postListPage ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+article.postExcerpt{
+    border: 1px solid lightgrey;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px auto;
+}
 
 
 /* ------------------------------------------ PostPage ---------------------------------------------- */
@@ -492,7 +531,7 @@ footer .linkedin-sharelink img{
     margin: 30px auto;
 }
 
-.postPage .smallPostImage{
+.smallPostImage{
     display: block;
     width: 80%;
     max-width: 300px;
