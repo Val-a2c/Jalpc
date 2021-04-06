@@ -4,7 +4,7 @@ title:  "Welcome to Jekyll with a much longer title to see how it fill the block
 date:   2021-03-17 11:39:55 +0100
 categories: jekyll update
 permalink: "/coucou"
-header-image: "/images/landing-page/iStock-1174382839-compressed.jpg"
+header-image: "/images/posts/img1.jpg"
 
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.

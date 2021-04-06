@@ -433,6 +433,7 @@ footer .linkedin-sharelink img{
     padding: 0;
     display: flex;
     justify-content: space-between;
+    margin: 25px auto;
 }
 
 #posts li{
@@ -448,6 +449,7 @@ footer .linkedin-sharelink img{
     width: 100%;
     height: 200px;
     overflow: hidden;
+    margin-bottom: 5px;
 }
 
 #posts article{
@@ -468,12 +470,16 @@ footer .linkedin-sharelink img{
     width: 200px;
 }
 
-/* ------------------------------------------ PostPage ---------------------------------------------- */
+/* ------------------------------------------ PostListPage ---------------------------------------------- */
 .postListPage{
-    padding-top: calc(65px + 40px);
+    padding-top: calc(65px + 30px);
     width: 80%;
     max-width: 816px;
-    margin: auto;
+    margin: 0 auto 60px;
+}
+
+.postListPage h2{
+    font-size: 2em;
 }
 
 .postListPage ul{
@@ -481,11 +487,32 @@ footer .linkedin-sharelink img{
     padding: 0;
 }
 
-article.postExcerpt{
-    border: 1px solid lightgrey;
-    border-radius: 20px;
-    padding: 20px;
+.postListPage article{
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px -1px rgba(0,0,0,.15),0 0 1px rgba(0,0,0,.09);
     margin: 20px auto;
+    height: 230px;
+}
+
+.postListPage__articleDescription{
+    padding: 15px;
+    width: 67%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.postListPage__articleImage{
+    max-width: 240px;
+    width: 33%;
+}
+
+.postListPage__articleImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 
@@ -509,7 +536,7 @@ article.postExcerpt{
     padding-top: 65px;
     position: relative;
     width: 100%;
-    height: 300px;
+    height: 340px;
 }
 
 .postHeader > img{
