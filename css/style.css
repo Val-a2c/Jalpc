@@ -472,14 +472,19 @@ footer .linkedin-sharelink img{
 
 /* ------------------------------------------ PostListPage ---------------------------------------------- */
 .postListPage{
-    padding-top: calc(65px + 30px);
+    padding-top: calc(65px + 40px);
     width: 80%;
     max-width: 816px;
     margin: 0 auto 60px;
 }
 
 .postListPage h2{
-    font-size: 2em;
+    font-size: 2.1em;
+}
+
+.postListPage .roboto-text{
+    font-size: 1.1em;
+    margin-top: 30px;
 }
 
 .postListPage ul{
@@ -491,8 +496,13 @@ footer .linkedin-sharelink img{
     display: flex;
     border-radius: 5px;
     box-shadow: 0 2px 5px -1px rgba(0,0,0,.15),0 0 1px rgba(0,0,0,.09);
-    margin: 20px auto;
+    margin: 40px auto;
     height: 230px;
+    color: #4d4d4d;
+}
+
+.postListPage article:hover h3{
+    color: #599551;
 }
 
 .postListPage__articleDescription{
@@ -501,6 +511,17 @@ footer .linkedin-sharelink img{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.postDateWithClock{
+    display: flex;
+    align-items: center;
+}
+
+.clockImg{
+    height: 1em;
+    margin-right: 4px;
+    filter: invert(27%) sepia(9%) saturate(6%) hue-rotate(350deg) brightness(96%) contrast(83%);
 }
 
 .postListPage__articleImage{
@@ -513,6 +534,10 @@ footer .linkedin-sharelink img{
     height: 100%;
     object-fit: cover;
     object-position: center;
+}
+
+.btnBloc{
+    text-align: right;
 }
 
 
@@ -530,6 +555,7 @@ footer .linkedin-sharelink img{
 
 .postPage .container{
     max-width: 816px;
+    margin: 0 auto 60px;
 }
 
 .postHeader{
@@ -557,7 +583,7 @@ footer .linkedin-sharelink img{
     max-width: 816px;
 }
 
-.postDate{
+.postPage .postDate{
     border-bottom: 1px solid #ddd;
     margin-bottom: 30px;
 }
@@ -570,6 +596,10 @@ footer .linkedin-sharelink img{
 
 .postPage a{
     color: rgb(0, 0, 238);
+}
+
+.postPage a.postBtn{
+    color: black;
 }
 
 
