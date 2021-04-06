@@ -15,7 +15,7 @@ layout: default
             <div class="postListPage__articleDescription">
               <div>
                 <h3>{{ post.title }}</h3>
-                <p>{{ post.excerpt }}</p>
+                {{ post.excerpt }}
               </div>
               <div class="postDateWithClock"><img src="images/clock-regular.svg" class="clockImg"><small>Posté le {{ post.date | date: "%d / %m / %Y" }}</small></div>
             </div>
