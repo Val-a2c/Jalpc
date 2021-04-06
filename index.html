@@ -214,20 +214,19 @@ permalink: '/'
                 {% for post in site.posts %}
                    {% if forloop.index < 4 %}
                     <li>
-                        <article class="postExcerpt">
-                        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-                        <div class="postDate">
-                            <p>Posté le {{ post.date | date: "%d / %m / %Y" }}</p>
-                        </div>
-                        <img src="{{ post.header-image }}" alt="illustration" class="smallPostImage">
-                        <p>{{ post.excerpt }}</p>
+                        <article>
+                            <div>
+                                <img src="{{ post.header-image }}" alt="illustration" class="fullWidthImage">
+                            </div>
+                            <h3 class="condensed-text"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                            <p>Le {{ post.date | date: "%d / %m / %Y" }}</p>   
                         </article>
                     </li>
                   {% endif %}
                 {% endfor %}
               </ul>
         </div>
-        <a href="/post-list.html">Voir tous les articles</a>
+        <a class="btn postBtn" href="/post-list.html">Voir tous les articles</a>
     </div>
 
 </section>
