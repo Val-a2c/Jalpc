@@ -1,8 +1,14 @@
 <footer>
     <div class="container">
+        {% if page.layout == "post" %}
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url | prepend: site.url }}" class="linkedin-sharelink">
+                <img src="/images/landing-page/linkedin-share.png" alt="lien de partage linkedin" >
+            </a>
+        {% else %}
         <a href="https://www.linkedin.com/company/a2consulting/about/" class="linkedin-sharelink">
             <img src="/images/landing-page/linkedin-logo.png">
         </a>
+        {% endif %}
         <div>
             <p>Copyright © 2021 ASquared Consulting • Toulouse, France</p>
             <p><a href="/cgu.html">Conditions d'utilisation</a></p>
