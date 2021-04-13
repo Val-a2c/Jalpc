@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-{% include head.html %}
+{% include head-posts.html %}
 
 <body>
 
@@ -10,7 +10,7 @@
 <main class="postPage">
     <div class="postHeader">
         <img src="{{ page.header-image }}">
-        <h2>{{ page.title }}</h2>
+        <h2 class="{{ page.title-color }}">{{ page.title }}</h2>
     </div>
 
     <div class="container roboto-text">

@@ -45,6 +45,10 @@ a{
     object-fit: cover;
 }
 
+.text-right{
+    text-align: right;
+}
+
 /* Includes */
 header{
     position: fixed;
@@ -95,9 +99,13 @@ footer .linkedin-sharelink{
 footer .linkedin-sharelink img{
     display: block;
     width: 70px;
-    border-radius: 3px;
-    border: 1px solid #0074b3;
 }
+
+.linkedin-sharelink.postshare{
+    border: 1px solid #0074b3;
+    border-radius: 3px;
+}
+
 
 /* -------------------------- HomePage ------------------ */
 /* Section Intro */
@@ -131,10 +139,9 @@ footer .linkedin-sharelink img{
     margin-bottom: 90px;
 }
 
-.intro-content > .btn{
-    font-size: 1.2em;
-    padding: 24px 40px;
-    border-radius: 50px;
+.intro-content > .btn-group > .btn{
+    font-size: 1.1em;
+    padding: 15px 22px;
 }
 
 /* Section Needs */
@@ -144,7 +151,7 @@ footer .linkedin-sharelink img{
     background-color: white;
 }
 
-#anchor{
+.anchor{
     display: block;
     position: absolute;
     top: -65px;
@@ -174,10 +181,6 @@ footer .linkedin-sharelink img{
     border: 2px solid rgba(0,0,0,.1);
     width: 28%;
     line-height: 1.4em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 }
 
 /* Section Solutions */
@@ -428,6 +431,10 @@ footer .linkedin-sharelink img{
 }
 
 /* Section Posts */
+#posts{
+    position: relative;
+}
+
 #posts ul{
     list-style-type: none;
     padding: 0;
@@ -557,7 +564,7 @@ footer .linkedin-sharelink img{
     font-size: 1.1em;
     font-weight: 100;
     line-height: 32px;
-    margin: 5px auto;
+    margin: 10px auto;
 }
 
 .postPage h3{
@@ -576,6 +583,18 @@ footer .linkedin-sharelink img{
     height: 340px;
 }
 
+.postHeader .white{
+    color: white;
+}
+
+.postHeader .darkgrey{
+    color: #4f4646;
+}
+
+.postHeader .green{
+    color: #599551;
+}
+
 .postHeader > img{
     width: 100%;
     height: 100%;
@@ -588,7 +607,6 @@ footer .linkedin-sharelink img{
     bottom: 20%;
     left: 50%;
     transform: translateX(-50%);
-    color: white;
     font-size: 2.8em;
     width: 100%;
     max-width: 816px;
@@ -838,6 +856,18 @@ footer .linkedin-sharelink img{
 
     body{
         font-size: 15px;
+    }
+
+    .intro-content > h2{
+        font-size: 2.5em;
+        margin-bottom: 20px;
+    }
+
+    .intro-content > .btn-group > .btn{
+        padding: 15px 18px;
+        margin: 15px 0;
+        display: block;
+        width: max-content;
     }
 
     #solutions .container{
