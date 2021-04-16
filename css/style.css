@@ -861,6 +861,19 @@ footer .linkedin-sharelink img{
         font-size: 15px;
     }
 
+    #intro{
+        height: 600px;
+    }
+    
+    #intro > img{
+        height: 100%;
+    }
+    
+    .intro-content{
+        top: 100px;
+        transform: translateX(-50%);
+    }
+
     .intro-content > h2{
         font-size: 2.5em;
         margin-bottom: 20px;
