@@ -770,7 +770,7 @@ footer .linkedin-sharelink img{
 .formation_content article{
     margin: 40px auto;
     border-top: 1px solid lightgrey;
-    padding-top: 20px;
+    padding: 20px 5px;
 }
 
 .formation_content h3{
@@ -799,7 +799,8 @@ footer .linkedin-sharelink img{
 
 .formation > .formation_dates{
     position: relative;
-    margin: 0 auto 80px;
+    width: 80%;
+    margin: 0 auto 40px;
     padding: 60px;
     border-bottom: 5px solid #4eba76;
     border-radius: 20px;
@@ -833,6 +834,11 @@ footer .linkedin-sharelink img{
 
 .formation_dates > div > div > img{
     width: 80%;
+}
+
+.formation > .btnBloc{
+    margin-bottom: 50px;
+    margin-right: 20px;
 }
 
 /* ------------------------------------------- RESPONSIVE RULES -------------------------------------------------- */
@@ -1013,9 +1019,51 @@ footer .linkedin-sharelink img{
         object-position: center;
     }
 
-        .btnBloc{
-            text-align: center;
-        }
+    .btnBloc{
+        text-align: center;
+    }
+
+    /* Page formation */
+    .formation > section{
+        padding: 30px 0;
+    }
+
+    .formation_intro_numbers{
+        flex-direction: column;
+    }
+
+    .formation_intro_numbers br{
+        display: none;
+    }
+
+    .formation_target > div {
+        flex-direction: column;
+    }
+
+    .formation_target_image{
+        margin: 0 auto;
+    }
+
+    .formation > .formation_content{
+        padding: 20px;
+    }
+
+    .formation_content_goals{
+        margin-top: 20px;
+        grid-template-columns: 1fr;
+    }
+
+    .formation_content_goals > p{
+        margin: 0;
+    }
+
+    .formation > .formation_dates{
+        padding: 20px;
+    }
+
+    .formation > .btnBloc{
+        margin-right: 0;
+    }
 }
 
 @media screen and (max-width: 500px){
@@ -1051,6 +1099,15 @@ footer .linkedin-sharelink img{
 
     #solutions .container{
         display: flex;
+        flex-direction: column;
+    }
+
+    .formation_intro_links{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .formation_dates > div{
         flex-direction: column;
     }
 
