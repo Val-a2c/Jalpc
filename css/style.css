@@ -763,6 +763,10 @@ footer .linkedin-sharelink img{
     font-style: italic;
 }
 
+.formation > .formation_content{
+    padding: 60px;
+}
+
 .formation_content article{
     margin: 40px auto;
     border-top: 1px solid lightgrey;
@@ -794,6 +798,7 @@ footer .linkedin-sharelink img{
 }
 
 .formation > .formation_dates{
+    position: relative;
     margin: 0 auto 80px;
     padding: 60px;
     border-bottom: 5px solid #4eba76;
@@ -803,6 +808,10 @@ footer .linkedin-sharelink img{
 
 .formation_dates > div{
     display: flex;
+}
+
+.formation_dates > .anchor{
+    top: -100px;
 }
 
 .formation_dates > div > p{
