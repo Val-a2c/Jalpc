@@ -320,6 +320,30 @@ footer .linkedin-sharelink img{
 }
 
 
+/* Section formation */
+#formation h2{
+    font-size: 2.2em;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+#formation .container > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+#formation article{
+    background-color: #ebe8e4;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#formation article p.time{
+    margin: 20px auto 30px;
+    font-size: 1.2em;
+}
+
 
 
 /* Section Bio */
@@ -367,7 +391,7 @@ footer .linkedin-sharelink img{
 
 /* Section collaborations */
 #collaborations h2{
-    font-size: 2.8em;
+    font-size: 2.2em;
     font-weight: 100;
 }
 
@@ -671,7 +695,32 @@ footer .linkedin-sharelink img{
 }
 
 /* ---------------------------------------- Formation ------------------------------------------------- */
-.formation h2, .formation h3{
+.formation section{
+    padding: 40px 0;
+}
+
+.formation .formation_title{
+    padding-top: 120px;
+}
+
+.formation .formation_title h2{
+    font-size: 3em;
+    font-weight: bolder;
+    color: #515154;
+    padding-top: 30px;
+    border-top: 3px solid #515154;
+}
+
+.formation .formation_intro{
+    font-size: 1.8em;
+    line-height: 1.9em;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    color: white;
+    background-color: #84926e;
+}
+
+/* .formation h2, .formation h3{
     text-align: center;
 }
 
@@ -839,7 +888,7 @@ footer .linkedin-sharelink img{
 .formation > .btnBloc{
     margin-bottom: 50px;
     margin-right: 20px;
-}
+} */
 
 /* ------------------------------------------- RESPONSIVE RULES -------------------------------------------------- */
 @media screen and (max-width: 1060px){
@@ -1023,7 +1072,7 @@ footer .linkedin-sharelink img{
         text-align: center;
     }
 
-    /* Page formation */
+    /* Page formation
     .formation > section{
         padding: 30px 0;
     }
@@ -1063,7 +1112,7 @@ footer .linkedin-sharelink img{
 
     .formation > .btnBloc{
         margin-right: 0;
-    }
+    } */
 }
 
 @media screen and (max-width: 500px){
@@ -1102,13 +1151,13 @@ footer .linkedin-sharelink img{
         flex-direction: column;
     }
 
-    .formation_intro_links{
+    /* .formation_intro_links{
         grid-template-columns: 1fr;
         gap: 20px;
     }
 
     .formation_dates > div{
         flex-direction: column;
-    }
+    } */
 
 }
