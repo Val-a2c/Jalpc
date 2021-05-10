@@ -740,6 +740,10 @@ footer .linkedin-sharelink img{
     padding: 40px 0;
 }
 
+.formation{
+    color: #545154;
+}
+
 .formation .formation_title{
     padding-top: 120px;
 }
@@ -747,7 +751,6 @@ footer .linkedin-sharelink img{
 .formation .formation_title h2{
     font-size: 3em;
     font-weight: bolder;
-    color: #515154;
     padding-top: 30px;
     border-top: 3px solid #515154;
 }
@@ -824,7 +827,6 @@ footer .linkedin-sharelink img{
     font-size: 2.2em;
     font-weight: 900;
     margin-bottom: 30px;
-    color: #515154;
 }
 
 .formation h3.colored-title{
@@ -901,7 +903,6 @@ footer .linkedin-sharelink img{
 .formation .formation_modules_time{
     font-size: 1.2em;
     font-weight: bold;
-    color: #515154;
     margin: 5px;
 }
 
@@ -913,12 +914,32 @@ footer .linkedin-sharelink img{
 }
 
 
-.formation .formation_goals{
-
+.formation .formation_goals .formation_goals_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
 }
+
+.formation .formation_goals .formation_goals_grid article{
+    border-radius: 30px;
+    background-color: #e3e0da;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.formation .formation_goals .formation_goals_grid article p{
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
 
 .formation .formation_methods{
     background-color: #e3e0da;
+}
+
+.formation .formation_methods p{
+    font-size: 1.2em;
+    line-height: 1.6em;
 }
 
 .formation .formation_program{
