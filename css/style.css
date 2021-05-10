@@ -753,12 +753,176 @@ footer .linkedin-sharelink img{
 }
 
 .formation .formation_intro{
-    font-size: 1.8em;
-    line-height: 1.9em;
+    font-size: 1.6em;
+    line-height: 1.7em;
     letter-spacing: 2px;
     word-spacing: 3px;
     color: white;
     background-color: #84926e;
+}
+
+.formation .formation_numbers{
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    gap: 20px;
+}
+
+.formation .formation_numbers_stat{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formation .formation_numbers_stat p{
+    width: 300px;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.formation .formation_numbers_stat img{
+    width: 300px;
+    margin: auto;
+}
+
+.formation .formation_numbers_stat .formation_numbers_stat_number{
+    position: absolute;
+    top: 110px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.formation .formation_numbers_day{
+    font-size: 3em;
+    font-weight: bold;
+    color: #84926e;
+    text-align: center;
+}
+
+.formation .formation_numbers_people{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: auto;
+}
+
+.formation .formation_numbers_people img{
+    margin-top: 10px;
+}
+
+.formation .formation_numbers_people p{
+    font-size: 1.5em;
+    margin: 10px 0 0 0;
+}
+
+.formation h3{
+    font-size: 2.2em;
+    font-weight: 900;
+    margin-bottom: 30px;
+    color: #515154;
+}
+
+.formation h3.colored-title{
+    color: #84926e;
+}
+
+.formation .formation_target{
+    background-color: #e3e0da;
+}
+
+.formation .formation_target .container > div{
+    display: flex;
+    justify-content: space-around;
+}
+
+.formation .formation_target .container > div > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.formation .formation_target .container > div p{
+    font-size: 1.3em;
+}
+
+.formation .formation_prerequisite > div{
+    display: flex;
+}
+
+.formation .formation_prerequisite h3{
+    margin-bottom: 10px;
+}
+
+.formation .formation_prerequisite p{
+    font-size: 1.3em;
+    flex: 1;
+}
+
+.formation .formation_modules{
+    background-color: #e3e0da;
+    padding-bottom: 80px;
+}
+
+.formation .formation_modules .container > div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 100px;
+    row-gap: 60px;
+}
+
+.formation .formation_modules .container > div article{
+    position: relative;
+    max-width: 300px;
+    background-color: white;
+    border-radius: 30px;
+    font-size: 1.3em;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.formation .formation_modules .container > div article span{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translate(-50%, 50%);
+    font-size: 8em;
+    font-family: 'Allura', cursive;
+    color: #84926e;
+    font-weight: 100;
+}
+
+.formation .formation_modules_time{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #515154;
+    margin: 5px;
+}
+
+.formation .formation_modules_price{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #84926e;
+    margin: 5px auto 20px;
+}
+
+
+.formation .formation_goals{
+
+}
+
+.formation .formation_methods{
+    background-color: #e3e0da;
+}
+
+.formation .formation_program{
+
 }
 
 /* .formation h2, .formation h3{
