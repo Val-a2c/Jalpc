@@ -1090,6 +1090,12 @@ footer .linkedin-sharelink img{
     }
 }
 
+@media screen and (max-width: 820px) {
+    #formation .container > div {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media screen and (max-width: 775px){
     
     .formation .formation_title{
