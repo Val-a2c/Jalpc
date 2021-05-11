@@ -475,6 +475,9 @@ footer .linkedin-sharelink img{
 /* Section exchanges */
 #exchanges{
     background-color: #ebe8e4;
+}
+
+#exchanges p{
     font-size: 1.2em;
 }
 
