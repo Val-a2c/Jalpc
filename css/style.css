@@ -327,7 +327,7 @@ footer .linkedin-sharelink img{
 
 #formation::before {
     content: "";
-    background-image: url('/images/landing-page/istockphoto-formation.jpg');
+    background-image: url('/images/landing-page/formation.jpg');
     background-size: cover;
     background-position: center right;
     position: absolute;
@@ -349,7 +349,7 @@ footer .linkedin-sharelink img{
 #formation .container > div {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
+    gap: 48px;
     margin: auto 30px;
 }
 
@@ -385,6 +385,9 @@ footer .linkedin-sharelink img{
     font-size: 1.5em;
 }
 
+#formation article small{
+    font-size: 14px;
+}
 
 
 /* Section Bio */
@@ -632,10 +635,18 @@ footer .linkedin-sharelink img{
 
 
 /* ------------------------------------------ PostPage ---------------------------------------------- */
-.postPage p{
-    font-size: 1.1em;
+.postPage{
+    font-family: 'Roboto', sans-serif;
     font-weight: 100;
+    font-size: 1.1em;
     line-height: 32px;
+}
+
+.postPage ol, .postPage ul{
+    margin-top: 0;
+}
+
+.postPage p{
     margin: 10px auto;
 }
 
@@ -689,7 +700,6 @@ footer .linkedin-sharelink img{
     margin-bottom: 30px;
 }
 
-
 .postDate > p{
     font-size: 0.9em;
     color: #a9aeb2;
@@ -702,7 +712,6 @@ footer .linkedin-sharelink img{
 .postPage a.postBtn{
     color: black;
 }
-
 
 .postPage .container > p:last-of-type{
     margin-bottom: 50px;
@@ -899,6 +908,8 @@ footer .linkedin-sharelink img{
 
 .formation .formation_prerequisite > div{
     display: flex;
+    width: 90%;
+    margin: auto;
 }
 
 .formation .formation_prerequisite h3{
@@ -1142,6 +1153,7 @@ footer .linkedin-sharelink img{
     
     .formation .formation_prerequisite > div{
         flex-direction: column;
+        width: 100%;
     }
     
     .formation .formation_prerequisite p{
