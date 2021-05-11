@@ -1014,6 +1014,22 @@ footer .linkedin-sharelink img{
     border-bottom: none;
 }
 
+.formation .formation_program .arrow-down{
+    display: none;
+    width: 40px;
+    opacity: 0.9;
+}
+
+.formation .formation_program .arrow-up{
+    width: 40px;
+    opacity: 0.9;
+}
+
+.formation .formation_program > article > div:first-of-type{
+    display: flex;
+    justify-content: space-between;
+}
+
 .formation .formation_program h4{
     font-size: 1.8em;
 }
