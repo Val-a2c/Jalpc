@@ -922,6 +922,7 @@ footer .linkedin-sharelink img{
 .formation .formation_modules .container > div article{
     position: relative;
     max-width: 300px;
+    margin: auto;
     background-color: white;
     border-radius: 30px;
     font-size: 1.2em;
@@ -1082,8 +1083,85 @@ footer .linkedin-sharelink img{
     #bio .container > div:last-child img{
         max-height: 300px;
     }
+
+    .formation .formation_modules .container > div{
+        width: 90%;
+        margin: auto;
+    }
 }
 
+@media screen and (max-width: 775px){
+    
+    .formation .formation_title{
+        padding-top: 60px;
+    }
+    
+    .formation .formation_title h2{
+        font-size: 2.4em;
+    }
+    
+    .formation .formation_intro{
+        font-size: 1.3em;
+        line-height: 1.4em;
+    }
+    
+    .formation .formation_numbers{
+        grid-template-columns: 1fr;
+    }
+    
+    .formation .formation_numbers_stat p{
+        width: 100%;
+    }
+    
+    .formation .formation_numbers_stat img{
+        width: 90%;
+        max-width: 300px;
+    }
+    
+    .formation .formation_links{
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+    .formation .formation_target .container > div{
+        flex-direction: column;
+    }
+    
+    .formation .formation_target .container > div p{
+        font-size: 1.1em;
+    }
+    
+    .formation .formation_prerequisite > div{
+        flex-direction: column;
+    }
+    
+    .formation .formation_prerequisite p{
+        font-size: 1.1em;
+    }
+    
+    .formation .formation_modules .container > div{
+        grid-template-columns: 1fr;
+    }
+    
+    .formation .formation_modules .container > div article{
+        width: 75%;
+        margin: auto;
+    }
+    
+    .formation .formation_modules .container > div article span{
+        font-size: 6em;
+    }
+    
+    .formation .formation_goals .formation_goals_grid{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    
+    .formation .formation_dates_bloc > div:first-of-type{
+        flex-direction: column-reverse;
+        padding-bottom: 20px;
+    }
+}
 
 @media screen and (max-width: 750px){
     .needs_items{
